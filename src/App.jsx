@@ -1,8 +1,8 @@
+import RoutesApp from "./routes"
+
 const App = () => {
   return (
-    <div>
-      ...
-    </div>
+    <RoutesApp />
   )
 }
 
