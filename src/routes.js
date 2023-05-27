@@ -8,13 +8,14 @@ import NewProject from "./components/pages/NewProject"
 import Container from "./components/layout/Container";
 import Navbar from "./components/layout/Navbar";
 import Projects from "./components/pages/Projects";
+import Footer from "./components/layout/Footer";
 
 
 const RoutesApp = () => {
   return (
     <BrowserRouter>
       <Navbar />
-      <Container custonClass='min-height'>
+      <Container customClass='min-height'>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
@@ -23,7 +24,7 @@ const RoutesApp = () => {
           <Route path="/newproject" element={<NewProject />} />
         </Routes>
       </Container>
-      <p>Footer</p>
+      <Footer />
     </BrowserRouter>
   )
 }
